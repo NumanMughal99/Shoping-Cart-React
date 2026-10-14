@@ -1,0 +1,154 @@
+.home {
+  min-height: 100vh;
+  background: #f5f7ff;
+}
+
+.hero {
+  min-height: 520px;
+  padding: 60px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #dbeafe
+  );
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.small-title {
+  color: #6366f1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin: 15px 0;
+  color: #172554;
+}
+
+.hero h1 span {
+  color: #6366f1;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.shop-btn {
+  margin-top: 20px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.shop-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.hero-image img {
+  width: 480px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px #00000020;
+}
+
+.featured {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.featured h2 {
+  color: #172554;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.featured > p {
+  color: #64748b;
+}
+
+.featured-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 220px;
+  padding: 35px 20px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 8px 25px #00000015;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px #00000018;
+}
+
+.feature-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: #172554;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    padding: 50px 5%;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+}

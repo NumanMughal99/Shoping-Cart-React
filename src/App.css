@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #172554;
+}
+
+button {
+  font-family: inherit;
+}
+
+.navbar {
+  min-height: 75px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 3px 15px #00000012;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  color: #172554;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo span {
+  color: #6366f1;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links button {
+  border: none;
+  background: transparent;
+  padding: 10px 15px;
+  font-size: 15px;
+  color: #334155;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.nav-links button:hover {
+  background: #eef2ff;
+  color: #6366f1;
+}
+
+.nav-links button.active {
+  background: #6366f1;
+  color: white;
+}
+
+.cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  margin-left: 6px;
+  padding: 0 5px;
+  border-radius: 50px;
+  background: #ef4444;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.nav-links button.active .cart-count {
+  background: white;
+  color: #6366f1;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 15px 5%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links button {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
